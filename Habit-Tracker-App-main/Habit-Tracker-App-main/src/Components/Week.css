@@ -1,0 +1,61 @@
+/* Container for the entire week view */
+.week-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title of the habit */
+.habit-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Grid layout for displaying the days */
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Back button styles */
+.back-button-container {
+    margin-top: 30px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.btn-back {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #28a745;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #218838;
+}
+
+/* Responsive design for smaller devices */
+@media (max-width: 768px) {
+    .week-container {
+        padding: 10px;
+    }
+    .days-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+}

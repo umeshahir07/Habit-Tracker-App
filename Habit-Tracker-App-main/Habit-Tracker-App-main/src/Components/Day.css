@@ -1,0 +1,64 @@
+/* Container for each day block */
+.day-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .day-container:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+  }
+  
+  /* Title for the day */
+  .day-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Date below the title */
+  .day-date {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  /* Icons container to display habit status icons */
+  .icons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  /* Common styles for all icons */
+  .circle-icon {
+    font-size: 2rem;
+    color: #ccc;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .circle-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Active icon styles for different statuses */
+  .circle-icon.active {
+    color: #4caf50;
+  }
+  
+  .circle-icon.fa-circle-xmark.active {
+    color: #f44336;
+  }
+  
+  .circle-icon.fa-circle-minus.active {
+    color: #ff9800;
+  }
+  

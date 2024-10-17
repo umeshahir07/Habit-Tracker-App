@@ -1,0 +1,31 @@
+/* Main container for the list of habits */
+.lists-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 0 10px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Empty state message */
+.empty-message {
+    font-size: 1.2rem;
+    color: #888;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 500;
+}
+
+/* For larger screens */
+@media (min-width: 768px) {
+    .lists-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 30px;
+    }
+}

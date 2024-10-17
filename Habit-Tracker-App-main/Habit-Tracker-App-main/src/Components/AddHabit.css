@@ -1,0 +1,68 @@
+/* Container for the add habit form */
+.add-habit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Card for the form */
+  .add-habit-card {
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Title of the form */
+  .habit-title {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Input field */
+  .habit-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .habit-input:focus {
+    border-color: #2e7d32;
+    outline: none;
+  }
+  
+  /* Add Habit button */
+  .btn-add-habit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn-add-habit:hover {
+    background-color: #388e3c;box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  
+  /* Mobile responsive design */
+  @media (max-width: 768px) {
+    .add-habit-card {
+      padding: 2rem;
+      width: 90%;
+    }
+    
+    .habit-title {
+      font-size: 1.5rem;
+    }
+  }
+  
